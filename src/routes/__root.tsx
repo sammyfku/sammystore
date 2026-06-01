@@ -86,13 +86,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Sammy Store Logs is a trusted marketplace for buying verified social media accounts across Instagram, Facebook, Twitter, YouTube and more.",
       },
-      { property: "og:title", content: "Sammy Store Logs" },
+      { property: "og:title", content: "Sammy Store Logs — Buy Verified Social Media Accounts" },
       {
         property: "og:description",
         content: "Buy verified social media accounts with secure, instant delivery.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Sammy Store Logs — Buy Verified Social Media Accounts" },
+      { name: "description", content: "Project Revival analyzes ZIP files to recreate, preserve, and deploy projects with improved UI and bug fixes." },
+      { property: "og:description", content: "Project Revival analyzes ZIP files to recreate, preserve, and deploy projects with improved UI and bug fixes." },
+      { name: "twitter:description", content: "Project Revival analyzes ZIP files to recreate, preserve, and deploy projects with improved UI and bug fixes." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f3881ca1-88ef-4bd4-87e9-b4666dcace2b/id-preview-fc84ba59--6b0dc528-2b7d-4de3-9bce-88633a1c9e4b.lovable.app-1780313543777.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f3881ca1-88ef-4bd4-87e9-b4666dcace2b/id-preview-fc84ba59--6b0dc528-2b7d-4de3-9bce-88633a1c9e4b.lovable.app-1780313543777.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
