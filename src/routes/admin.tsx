@@ -280,13 +280,13 @@ function ProductsTab() {
     if (!productIds.length) return;
     const { data } = await supabase
       .from("product_credentials")
-      .select("product_id, is_delivered")
+      .select("product_id, order_id")
       .in("product_id", productIds);
     const counts: Record<string, { available: number; total: number }> = {};
-    (data ?? []).forEach((row: { product_id: string; is_delivered: boolean }) => {
+    ((data ?? []) as Array<{ product_id: string; order_id: string | null }>).forEach((row) => {
       if (!counts[row.product_id]) counts[row.product_id] = { available: 0, total: 0 };
       counts[row.product_id].total += 1;
-      if (!row.is_delivered) counts[row.product_id].available += 1;
+      if (!row.order_id) counts[row.product_id].available += 1;
     });
     setCredCounts(counts);
   };
