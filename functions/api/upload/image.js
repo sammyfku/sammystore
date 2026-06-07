@@ -54,9 +54,7 @@ export async function onRequestPost({ request, env }) {
   const ext      = (file.name.split(".").pop() || "jpg").toLowerCase();
   const fileName = `${Date.now()}-${Math.random().toString(36).slice(2, 9)}.${ext}`;
 
-  await ensureBucket(supabaseUrl, serviceKey);
-
-  const bytes     = await file.arrayBuffer();
+  const bytes = await file.arrayBuffer();
   await ensureBucket(supabaseUrl, serviceKey, bucket);
 
   const uploadRes = await fetch(
