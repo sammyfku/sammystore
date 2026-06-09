@@ -123,7 +123,6 @@ export default function HomePage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative"
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img src="/images/about-promo.jpg" alt="Sammy Store Logs" className="w-full h-auto object-cover" />
