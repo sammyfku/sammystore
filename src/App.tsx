@@ -40,6 +40,8 @@ export default function App() {
           <Route path="/reset-password" element={<ResetPasswordPage />} />
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/privacy-policy" element={<PrivacyPage />} />
+          <Route path="/foreign-numbers/:country" element={<ForeignNumbersCountryPage />} />
+          <Route path="/my-numbers" element={<MyNumbersPage />} />
         </Routes>
       </main>
       <SiteFooter />
